@@ -52,7 +52,7 @@ $$
 f(t, T) = \lim_{S \to T} F(t, T, S) = -\frac{d}{dT}logP(t, T) = -\frac{1}{P(t, T)}\frac{dP(t, T)}{dT} = \frac{d}{dT}(T-t)R(t, T) = R(t, T)+(T-t) \frac{dR(t, T)}{dT}
 $$
 
-Par-Yield
+Par Yield
 
 $$P_n(t)$$ is n-period Coupon Bond
 
@@ -61,7 +61,7 @@ P_n(t) = 100 = p(t, t+n) \sum_{i=1}^{n} P(t, t+i) +100 P(t, t+n)
 $$ 
 
 $$
-P(t, t+n) = 100 \frac{1-P(t, t+n)} {\sum_{i=1}^{n} P(t, t+i)} \text{(For Bootstrapping)}
+p(t, t+n) \text{(Par Yield)} = 100 \frac{1-P(t, t+n)} {\sum_{i=1}^{n} P(t, t+i)} \text{(for bootstrapping)}
 $$
 
 LIBOR/SOFR Rate
@@ -87,4 +87,10 @@ $$
 
 
 ### Fundamental Theorem of Asset Pricing 
+
+1. Arbitrage Free $$\leftrightarrow$$ There exists an equivalent local Martingale/risk-neutral measure
+
+2. Complete Market $$\leftrightarrow$$ This equivalent local Martingale/risk-neutral measure is unique
+
+Get familiar with the change of numeraire as it is the key to change the PDE from probability measure to risk-neutral measure to achieve the Martingale form where we can solve for the analytical formula for calibration. This is not only useful for the valuation of Interest Rate, but also for Fixed Income and many other asset classes in general. 
 
