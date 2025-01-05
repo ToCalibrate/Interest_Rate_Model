@@ -10,7 +10,6 @@ permalink: docs/basics
 Before jumping into any actual content, we have to be familiar with the following aspects: 
 - Rates Conversion
 - Fundamental Theorem of Asset Pricing
-- Ito's Formulas
 
 Each aspect will be crucial for us to set up a universe with stable assumptions to solve differential equations and derive any analytical formulas. 
 
