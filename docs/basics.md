@@ -24,20 +24,23 @@ $$
 P(t, T) = exp(R(t, T) \cdot (T-t))
 $$
 
-ZCB TYM/Spot Rate
+ZCB YTM/Spot Rate
 
 $$
 R(t, T) = \frac{-log P(t, T)}{T-t} = \frac{1}{T-t} \int_{t}^{T} f(t, u)du
 $$
 
+Short Rate
 
 $$
 \begin{align*}
     r(t) &= \lim_{T \to t}R(t, T) = \lim_{T \to t} f(t, T)\\
-    \to Cash \ C(t): dC(t) &= r(t)C(t)dt\\
+    dC(t) &= r(t)C(t)dt\\
     C(T) &= C(0)e^{\int_{0}^{t} r(u)du}
 \end{align*}
 $$
+
+Forward Rate
 
 $$
 F(t, T, S) = \frac{log (\frac{P(t, T)}{P(t, S)})}{S-T}
@@ -45,15 +48,8 @@ $$
 
 Instantaneous Forward Rate
 
-
 $$
-\begin{align*}
-    f(t, T) &= \lim_{S \to T} F(t, T, S) \\
-    &= -\frac{d}{dT} log P(t, T) \\
-    &= -\frac{1}{P(t, T)}\frac{dP(t, T)}{dT} \\
-    &= \frac{d}{dT} (T-t) R(t, T) \\
-    &= R(t, T) + (T-t) \frac{dR(t, T)}{dT}
-\end{align*}
+f(t, T) = \lim_{S \to T} F(t, T, S) = -\frac{d}{dT}logP(t, T) = -\frac{1}{P(t, T)}\frac{dP(t, T)}{dT} = \frac{d}{dT}(T-t)R(t, T) = R(t, T)+(T-t) \frac{dR(t, T)}{dT}
 $$
 
 Par-Yield
@@ -61,10 +57,11 @@ Par-Yield
 $$P_n(t)$$ is n-period Coupon Bond
 
 $$
-\begin{align*}
-    P_n(t) &= 100 = p(t, t+n) \sum_{i=1}^{n} P(t, t+i) +100 P(t, t+n)\\
-    P(t, t+n) &= 100 \frac{1-P(t, t+n)} {\sum_{i=1}^{n} P(t, t+i)} \text{  (For Bootstrapping)}
-\end{align*}
+P_n(t) = 100 = p(t, t+n) \sum_{i=1}^{n} P(t, t+i) +100 P(t, t+n)
+$$ 
+
+$$
+P(t, t+n) = 100 \frac{1-P(t, t+n)} {\sum_{i=1}^{n} P(t, t+i)} \text{(For Bootstrapping)}
 $$
 
 LIBOR/SOFR Rate
