@@ -83,37 +83,6 @@ $$
   \coordinate[label=left:$\text{Receive float rate L(t+i-1, t+i)}$] (A) at (4.5,-0.75);
 \end{tikzpicture}
 
-### The Evolution of Interest Rate Modeling
-#### Evolution
-$$
-dr(t) = k(\theta - r(t)) + \sigma d\tilde{W}(t) \hspace{0.5cm} \text{(Uasicek 1977)}
-$$
-
-$$
-dr(t) = k(\theta - r(t))dt + \sigma \sqrt{r(t)} d\tilde{W}(t) \hspace{0.5cm} \text{(CIR 1985)}
-$$
-
-$$
-dr(t) = (\theta(t)-k(t)r(t))dt + \sigma(t)r(t) d\tilde{W}(t) \hspace{0.5cm} \text{(Hull-White 1990)}
-$$
-
-For HJM
-$$
-E_{Q}\left(e^{-\int_{t}^{T} r(u)du} \right)
-$$
-
-$$
-e^{-\int_{t}^{T} f(t,u)du}
-$$
-
-$$
-df(t, T) = \alpha (t, T)dt + \sigma(t, T)dW(t)
-$$
-
-$$
-\frac{\mu(t, S_1)-r(t)}{\sigma(t, S_1)} = 
-$$
-
 
 
 ### Fundamental Theorem of Asset Pricing 
