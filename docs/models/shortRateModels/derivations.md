@@ -20,5 +20,3 @@ permalink: docs/models/shortRateModels/derivations
 
 ## Will be updated
 
-{: .error }
-> Please contact us for full code
