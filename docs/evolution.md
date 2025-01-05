@@ -76,3 +76,5 @@ In order to make the calibration reconciling with market observable increments, 
 Actually, in 1976, Fisher Black who is famous for his Black-Scholes model had already introduced a model called Black-76 model. 
 
 Here, we will focus on a model that is actually calibratable called BGM model. 
+
+### To be continued...........
