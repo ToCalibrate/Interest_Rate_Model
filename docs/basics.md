@@ -18,13 +18,13 @@ From my understanding, rates conversion is needed when you want a pricing formul
 ### Rates Conversion 
 
 
-$\textbf{Zero Coupon Bond Price}$
+Zero Coupon Bond Price
 
 $$
 P(t, T) = exp(R(t, T) \cdot (T-t))
 $$
 
-$\textbf{ZCB TYM/Spot Rate}$
+ZCB TYM/Spot Rate
 
 $$
 R(t, T) = \frac{-log P(t, T)}{T-t} = \frac{1}{T-t} \int_{t}^{T} f(t, u)du
@@ -43,7 +43,7 @@ $$
 F(t, T, S) = \frac{log (\frac{P(t, T)}{P(t, S)})}{S-T}
 $$
 
-$\textbf{Instantaneous Forward Rate}$
+Instantaneous Forward Rate
 
 
 $$
@@ -56,7 +56,7 @@ $$
 \end{align*}
 $$
 
-$\textbf{Par-Yield}$
+Par-Yield
 
 $$P_n(t)$$ is n-period Coupon Bond
 
@@ -67,7 +67,7 @@ $$
 \end{align*}
 $$
 
-$\textbf{LIBOR/SOFR Rate}$
+LIBOR/SOFR Rate
 
 For tenor $\tau$, 
 
@@ -76,7 +76,7 @@ $$
 $$
 
 
-$\textbf{Swap Rate}$
+Swap Rate
 
 $$
 \begin{tikzpicture}
