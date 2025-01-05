@@ -19,5 +19,3 @@ permalink: docs/models/marketModels/simulationsAndImplementations
 
 ## Will be updated
 
-{: .error }
-> Please contact us for full code
