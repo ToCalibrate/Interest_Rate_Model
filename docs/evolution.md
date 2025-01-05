@@ -29,7 +29,7 @@ where $$\tilde{W}(t)$$ is risk-neutral Stochastic Brownian Motion and $$r(t)$$ i
 
 If we want a calibration for zero coupon bond price, we derive the risk neutral pricing formula using Feyman-Kac. Solving the PDE gives us an Affine Term-Structure Model. Detailed derivation will be given in the next few sections. 
 
-Now, to overcome the possibility that interest rate will go negative and balance the effect of expected return and risk/volatility, three researchers proposed a new model form in 1985 named after their initials CIR: 
+Now, to overcome the possibility that interest rate will go negative and balance the effect of expected return and risk/volatility, three researchers proposed a new model form in 1985 named after their initials C.I.R.: 
 
 $$
 dr(t) = k(\theta - r(t))dt + \sigma \sqrt{r(t)} d\tilde{W}(t) \hspace{0.5cm} \text{(CIR 1985)}
@@ -43,21 +43,36 @@ $$
 dr(t) = (\theta(t)-k(t)r(t))dt + \sigma(t)r(t) d\tilde{W}(t) \hspace{0.5cm} \text{(Hull-White 1990)}
 $$
 
-Hull White is able to generate an analytical solution for caplet, floorlet and swaption which is a big step in real world calibtraion. ############### Now, before getting into the HJM design, 
-
-$$
-df(t, T) = \alpha (t, T)dt + \sigma(t, T)dW(t)
-$$
+Hull White is able to generate an analytical solution for caplet, floorlet and swaption which is a big step in real world calibtraion. It is worth noting that Hull White model is capable of transition from short rate modeling to forward rate modeling with its Markov property and flexibility in parameter tuning. 
 
 ### Instantaneous Forward Rate Models 
 
-For HJM
+To actually move on to instantaneous forward rate models, we need to introduce the HJM framework named after Heath–Jarrow–Morton. The essential difference of HJM to short rate modeling is the bond valuation definition. 
+
+For short rate modeling, we assume that the bond price under risk-neutral measure $$Q$$ is defined as 
+
 $$
 E_{Q}\left(e^{-\int_{t}^{T} r(u)du} \right)
 $$
 
+While in HJM, we assume the bond price no longer depends on a static short rate, but a dynamic forward rate that is evolving based on the tenor. 
+
 $$
 e^{-\int_{t}^{T} f(t,u)du}
+$$ 
+
+This difference leads to 
+
+$$
+df(t, T) = \alpha (t, T)dt + \sigma(t, T)dW(t) \hspace{0.5cm} \text{(1991)}
 $$
 
+Under risk-neutral & no-arbitrage, $$f(t, t)$$ in HJM is equivalent to $$r(t)$$ in Hull White. This forward looking characteristic enables the calibration of swaption prices. 
+
 ### Market Models 
+
+In order to make the calibration reconciling with market observable increments, we need to introduce the LIBOR Market model as it can be calibrated to actual LIBOR rates. 
+
+Actually, in 1976, Fisher Black who is famous for his Black-Scholes model had already introduced a model called Black-76 model. 
+
+Here, we will focus on a model that is actually calibratable called BGM model. 
