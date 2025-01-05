@@ -19,20 +19,19 @@ From my understanding, rates conversion is needed when you want a pricing formul
 ### Rates Conversion 
 
 
-Zero Coupon Bond Price
+$\textbf{Zero Coupon Bond Price}$
 
 $$
 P(t, T) = exp(R(t, T) \cdot (T-t))
 $$
 
-ZCB TYM/Spot Rate
+$\textbf{ZCB TYM/Spot Rate}$
 
 $$
 R(t, T) = \frac{-log P(t, T)}{T-t} = \frac{1}{T-t} \int_{t}^{T} f(t, u)du
 $$
 
- 
-    
+
 $$
 \begin{align*}
     r(t) &= \lim_{T \to t}R(t, T) = \lim_{T \to t} f(t, T)\\
@@ -45,7 +44,9 @@ $$
 F(t, T, S) = \frac{log (\frac{P(t, T)}{P(t, S)})}{S-T}
 $$
 
-Instantaneous Forward Rate
+$\textbf{Instantaneous Forward Rate}$
+
+
 $$
 \begin{align*}
     f(t, T) &= \lim_{S \to T} F(t, T, S) \\
@@ -56,7 +57,8 @@ $$
 \end{align*}
 $$
 
-Par-Yield
+$\textbf{Par-Yield}$
+
 $$P_n(t)$$ is n-period Coupon Bond
 
 $$
@@ -66,7 +68,8 @@ $$
 \end{align*}
 $$
 
-LIBOR/SOFR Rate
+$\textbf{LIBOR/SOFR Rate}$
+
 For tenor $\tau$, 
 
 $$
@@ -74,7 +77,8 @@ $$
 $$
 
 
-Swap Rate
+$\textbf{Swap Rate}$
+
 $$
 \begin{tikzpicture}
   \draw [|-|] [thick] (0,0) node[below] {$t$} -- (2,0) node[below] {$t+1$}
@@ -88,4 +92,3 @@ $$
 
 ### Fundamental Theorem of Asset Pricing 
 
-### Ito's Formulas
