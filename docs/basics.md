@@ -66,7 +66,7 @@ $$
 
 LIBOR/SOFR Rate
 
-For tenor $\tau$, 
+For tenor $$\tau$$, 
 
 $$
 1+\tau \cdot L(t, t+\tau)= \frac{1}{P(t, t+\tau)} = e^{R(t, t+\tau)}
