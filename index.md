@@ -40,4 +40,6 @@ HoLee, BK for short rate, Black-76 for market model
 
 To accomadate one more layer of risk with another factor, but more complicated to calibrate, may be added in the future. 
 
-A brief explanation of the difference between one and two factor short rate models: One-factor $$\to$$ Level, Two-factor $$\to$$ Level + Slope
+A brief explanation of the difference between one and two factor short rate models: 
+
+One-factor $$\to$$ Level, Two-factor $$\to$$ Level + Slope
