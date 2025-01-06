@@ -10,12 +10,8 @@ Target contributor: Anyone can contribute. No matter you are a college student w
 
 # For the first project -- Fixed Income -- Rate Modeling: 
 
-# For the second project -- Equity -- Stock Prices: 
+Need to update derivation and code
 
-# For the third project -- Equity -- Black Scholes: 
+# For the second project -- Mortgage Tokenizaiton: 
 
-# For the fourth project -- Crypto Asset -- Staking: 
 
-# For the fifth project -- Fixed Income -- Mortgage Prepayments: 
-
-# For the fourth project -- Commodity -- : 
