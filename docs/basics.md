@@ -18,7 +18,7 @@ From my understanding, rates conversion is needed when you want a pricing formul
 ### Rates Conversion 
 
 
-Zero Coupon Bond Price
+Zero Coupon Bond Price/Discount Factor
 
 $$
 P(t, T) = exp(R(t, T) \cdot (T-t))
