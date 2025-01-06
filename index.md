@@ -13,7 +13,7 @@ However, this note is currently incomplete. Even when it is completed, there wil
 
 You are welcomed to share any insights and make appropriate corrections. 
 
-## Models Introduction
+## Model Introduction
 
 There are 3 most popular methods to model Interest Rate. With an increasing practicability, they are: 
 - Short Rate Models 
@@ -29,3 +29,15 @@ Then, I wrote a chronicle showing the evolution of Interest Rate Models from the
 Lastly, for each model in the three methods, two things will be discussed: 
 - Derivation of the formulas
 - Simulation for the stochastic differential equation or implementation for the analytical formula (code is shared) 
+
+## Something also useful but won't be talked about in this note 
+
+- Some other models: 
+
+HoLee, BK for short rate, Black-76 for market model
+
+- Two or more factor models: 
+
+To accomadate one more layer of risk with another factor, but more complicated to calibrate, may be added in the future. 
+
+A brief explanation of the difference between one and two factor short rate models: One-factor $$\to$$ Level, Two-factor $$\to$$ Level + Slope
