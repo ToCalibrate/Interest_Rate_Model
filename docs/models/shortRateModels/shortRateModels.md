@@ -13,6 +13,3 @@ nav_order: 1
 
 {: .no_toc }
 
-## Vasicek 1977 
-
-## Hull White 1990
