@@ -18,5 +18,7 @@ permalink: docs/models/shortRateModels/derivations
 
 ---
 
-## Will be updated
+## Solving for Short Rate $$r(t)$$ 
+
+## Getting Bond Price $$B(r, t)$$ 
 
