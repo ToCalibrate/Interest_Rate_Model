@@ -20,5 +20,6 @@ permalink: docs/models/shortRateModels/derivations
 
 ## Solving for Short Rate $$r(t)$$ 
 
-## Getting Bond Price $$B(r, t)$$ 
+## Solving for Bond Price $$B(r, t)$$ 
 
+## Coming up......... Swaption Analytical Formula Derivation
