@@ -96,4 +96,4 @@ class ShortRate():
         return 
 ```
 
-## Coming up......... Swaption Formula
+## Coming up......... Swaption Calibration
