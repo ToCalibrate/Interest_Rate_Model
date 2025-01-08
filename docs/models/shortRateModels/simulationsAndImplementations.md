@@ -7,7 +7,7 @@ nav_order: 2
 permalink: docs/models/shortRateModels/simulationsAndImplementations
 ---
 
-# Simulations and Implementations
+# Simulations 
 {: .no_toc }
 
 ## Table of contents
@@ -18,7 +18,7 @@ permalink: docs/models/shortRateModels/simulationsAndImplementations
 
 ---
 
-## Example
+## Simulate for Short Rate Paths
 ```python
 class ShortRate(): 
     # Generate Short Rates using Monte Carlo Simulation 
@@ -95,3 +95,5 @@ class ShortRate():
 
         return 
 ```
+
+## Coming up......... Swaption Formula
