@@ -64,7 +64,7 @@ $$
 This difference leads to 
 
 $$
-df(t, T) = \alpha (t, T)dt + \sigma(t, T)dW(t) \hspace{0.5cm} \text{(1991)}
+df(t, T) = \alpha (t, T)dt + \sigma(t, T)dW(t) \hspace{0.5cm} \text{(HJM 1991)}
 $$
 
 Under risk-neutral & no-arbitrage, $$f(t, t)$$ in HJM is equivalent to $$r(t)$$ in Hull White. This forward looking characteristic enables the calibration of swaption prices. 
