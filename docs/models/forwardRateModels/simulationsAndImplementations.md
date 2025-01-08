@@ -6,7 +6,7 @@ grand_parent: Models
 nav_order: 2
 permalink: docs/models/forwardRateModels/simulationsAndImplementations
 ---
-# Simulations and Implementations
+# Simulations and Calibrations
 {: .no_toc }
 
 ## Table of contents
