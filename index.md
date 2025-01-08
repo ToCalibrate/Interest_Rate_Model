@@ -7,7 +7,7 @@ permalink: /
 
 ## Motivation
 
-This site has been created to summarize my understanding of Interest Rate Models and summarize into a note for sharing. In the next section, I will be intruducing the model I planned to include in this note. 
+This site has been created to summarize my understanding of Interest Rate Models and turn into a note for sharing. In the next section, I will be intruducing the model I planned to include in this note. 
 
 However, this note is currently incomplete. Even when it is completed, there will be many more complicated models in real market to suffice the valuation and trading strategy construction. Since they are more advanced version of the models in this note including more nuance to address some corner scenarios, I will only talk about these basic ones as a starter. 
 
