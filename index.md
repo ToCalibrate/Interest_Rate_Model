@@ -42,4 +42,12 @@ To accomadate one more layer of risk with another factor, but more complicated t
 
 A brief explanation of the difference between one and two factor short rate models: 
 
-One-factor $$\to$$ Level, Two-factor $$\to$$ Level + Slope
+One-factor $$\to$$ Level, Two-factor $$\to$$ Level + Slope 
+
+### If you are really interest in this topic, please do your own research. 
+
+Here is a great book you may reference to: 
+
+Interest Rate Models - Theory and Practice: With Smile, Inflation and Credit (by Damiano Brigo, Fabio Mercurio) 
+
+This book should have all detailed navigation, derivation and calibration except for code sharing 
