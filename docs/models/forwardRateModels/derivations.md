@@ -18,5 +18,5 @@ permalink: docs/models/forwardRateModels/derivations
 
 ---
 
-## Will be updated
+## Solving for Bond Price $$B(r, t)$$ using HJM framework
 
