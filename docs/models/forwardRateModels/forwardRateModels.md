@@ -13,5 +13,3 @@ nav_order: 2
 
 {: .no_toc }
 
-
-## Vasicek 1977
