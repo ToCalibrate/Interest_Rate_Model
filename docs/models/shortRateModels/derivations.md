@@ -29,8 +29,8 @@ $$
 \end{align*}
 $$
 
-## Coming up......... 
-
 ### Solving for Bond Price $$B(r, t)$$ 
+
+## Coming up......... 
 
 ### Swaption Analytical Formula Derivation using Hull White 1990
