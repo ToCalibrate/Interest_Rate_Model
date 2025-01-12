@@ -47,7 +47,7 @@ Hull White is able to generate an analytical solution for caplet, floorlet and s
 
 ### Instantaneous Forward Rate Models 
 
-To actually move on to instantaneous forward rate models, we need to introduce the HJM framework named after Heath–Jarrow–Morton. The essential difference of HJM to short rate modeling is the bond valuation definition. 
+Instantaneous forward rate models forward rate $$f(t, T)$$ instead of short rate $$r(t)$$. The essential difference of instantaneous forward rate modeling to short rate modeling is the bond valuation definition. 
 
 For short rate modeling, we assume that the bond price under risk-neutral measure $$Q$$ is defined as 
 
@@ -55,19 +55,19 @@ $$
 E_{Q}\left(e^{-\int_{t}^{T} r(u)du} \right)
 $$
 
-While in HJM, we assume the bond price no longer depends on a static short rate, but a dynamic forward rate that is evolving based on the tenor. 
+While in instantaneous forward rate models, we assume the bond price no longer depends on a static short rate, but a dynamic forward rate that is evolving based on the tenor. 
 
 $$
 e^{-\int_{t}^{T} f(t,u)du}
 $$ 
 
-This difference leads to 
+This difference leads to the generalized formula of HJM framework named after Heath–Jarrow–Morton. 
 
 $$
 df(t, T) = \alpha (t, T)dt + \sigma(t, T)dW(t) \hspace{0.5cm} \text{(HJM 1991)}
 $$
 
-Under risk-neutral & no-arbitrage, $$f(t, t)$$ in HJM is equivalent to $$r(t)$$ in Hull White. This forward looking characteristic enables the calibration of swaption prices. 
+Under risk-neutral & no-arbitrage, $$f(t, t)$$ in HJM is equivalent to $$r(t)$$ in Hull White. This forward looking characteristic enables us to calibrate swaption prices using Hull White under HJM framework. 
 
 ### Market Models 
 
