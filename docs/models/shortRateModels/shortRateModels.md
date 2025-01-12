@@ -13,7 +13,8 @@ nav_order: 1
 
 {: .no_toc }
 
+## Derivation, Simulation and Implementation
 
 In this section, I will derive the bond price formula for Vasicek and swaption price for Hull White. 
 
-Then, I will code a simulation for rates and a closed form formila for bond and swaption prices. 
+Then, I will code up a sample simulation for short rates and a closed form formula for bond and swaption prices. 
