@@ -22,9 +22,15 @@ permalink: docs/models/shortRateModels/derivations
 
 ### Solving for Short Rate $$r(t)$$ 
 
+$$
+\begin{align*}
+    dr(t) = k(\theta - r(t)) + \sigma d\tilde{W}(t) 
+    
+\end{align*}
+$$
+
+## Coming up......... 
+
 ### Solving for Bond Price $$B(r, t)$$ 
 
-
-## Coming up......... Hull White 1990
-
-### Swaption Analytical Formula Derivation
+### Swaption Analytical Formula Derivation using Hull White 1990
