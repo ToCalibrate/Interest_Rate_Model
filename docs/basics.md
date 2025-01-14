@@ -72,6 +72,11 @@ $$
 1+\tau \cdot L(t, t+\tau)= \frac{1}{P(t, t+\tau)} = e^{R(t, t+\tau)}
 $$
 
+Swap Rate 
+
+For a Payer Swap with life from $$t$$ to $$t+n$$, at each time increment $$t+i-1$$ to $$t+i$$, pay fix rate $${S(t, t+n)}$$, receive float rate $${L(t+i-1, t+i)}$$ 
+
+For Receiver Swap with same time definitions, receive fix rate $${S(t, t+n)}$$, pay float rate $${L(t+i-1, t+i)}$$ 
 
 ### Fundamental Theorem of Asset Pricing 
 
