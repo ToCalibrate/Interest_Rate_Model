@@ -15,3 +15,16 @@ Need to update derivation and code
 # For the second project -- Mortgage Tokenizaiton: 
 
 
+
+
+Swap Rate
+
+$$
+\begin{tikzpicture}
+  \draw [|-|] [thick] (0,0) node[below] {$t$} -- (2,0) node[below] {$t+1$}
+  -- (2,0) -- (4,0)   node[below] {$t+2$}
+  -- (4,0) -- (10,0) node[midway, below] {$\ldots$} node[below] {$t+n$};
+  \coordinate[label=center:$\text{Pay fix rate S(t, t+n)}$] (A) at (1.5,0.5);
+  \coordinate[label=left:$\text{Receive float rate L(t+i-1, t+i)}$] (A) at (4.5,-0.75);
+\end{tikzpicture}
+$$
