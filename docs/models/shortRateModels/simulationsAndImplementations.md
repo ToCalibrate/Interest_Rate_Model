@@ -46,7 +46,8 @@ class ShortRate():
         # Simulate rate path for each time increment
         for i in range(1, len(rate_paths)): 
             dWt = np.random.normal(0, np.sqrt(dt), size=n_simulation) 
-            rate_paths.loc[i*dt, :] = rate_paths.loc[(i-1)*dt, :] + self.kappa*(self.theta-rate_paths.loc[(i-1)*dt, :])*dt
+            rate_paths.loc[i*dt, :] = rate_paths.loc[(i-1)*dt, :]
+                                        + self.kappa*(self.theta-rate_paths.loc[(i-1)*dt, :])*dt
                                         + self.sigma * dWt
 
         return rate_paths
@@ -63,10 +64,11 @@ class ShortRate():
         # Simulate rate path for each time increment
         for i in range(1, len(rate_paths)): 
             dWt = np.random.normal(0, np.sqrt(dt), size=n_simulation) 
-            rate_paths.loc[i*dt, :] = rate_paths.loc[(i-1)*dt, :] + self.kappa*(self.theta-rate_paths.loc[(i-1)*dt, :])*dt
+            rate_paths.loc[i*dt, :] = rate_paths.loc[(i-1)*dt, :]
+                                        + self.kappa*(self.theta-rate_paths.loc[(i-1)*dt, :])*dt
                                         + self.sigma * np.sqrt(rate_paths.loc[(i-1)*dt, :]) * dWt
 
-            return rate_paths
+        return rate_paths
 ```
 
 ## Coming up......... Swaption Calibration
