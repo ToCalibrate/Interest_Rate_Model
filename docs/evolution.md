@@ -71,10 +71,10 @@ Under risk-neutral & no-arbitrage, $$f(t, t)$$ in HJM is equivalent to $$r(t)$$ 
 
 ### Market Models 
 
-In order to make the calibration reconciling with market observable increments, we need to introduce the LIBOR Market model as it can be calibrated to actual LIBOR rates. 
+In order to make the calibration reconciling with market observable increments, we need to introduce the LIBOR Market model as it can be calibrated to actual LIBOR rates product. 
 
 Actually, in 1976, Fisher Black who is famous for his Black-Scholes model had already introduced a model called Black-76 model. 
 
-Here, we will focus on a model that is actually calibratable called BGM model. 
+However, we won't elaborate it and will focus on a model that is actually calibratable called BGM model. 
 
 ### To be continued...........
