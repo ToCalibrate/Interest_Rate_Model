@@ -10,6 +10,7 @@ permalink: docs/basics
 Before jumping into any actual content, we have to be familiar with the following aspects: 
 - Rates Conversion
 - Fundamental Theorem of Asset Pricing
+- Ito's Formula
 
 Each aspect will be crucial for us to set up a universe with stable assumptions to solve differential equations and derive any analytical formulas. 
 
@@ -85,4 +86,6 @@ For Receiver Swap with same time definitions, receive fix rate $${S(t, t+n)}$$, 
 2. Complete Market $$\leftrightarrow$$ This equivalent local Martingale/risk-neutral measure is unique
 
 Get familiar with the change of numeraire as it is the key to change the PDE from probability measure to risk-neutral measure to achieve the Martingale form where we can solve for the analytical formula for calibration. This is not only useful for the valuation of Interest Rate, but also for Fixed Income and many other asset classes in general. 
+
+### Ito's Formula
 
