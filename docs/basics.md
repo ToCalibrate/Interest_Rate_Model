@@ -89,3 +89,14 @@ Get familiar with the change of numeraire as it is the key to change the PDE fro
 
 ### Ito's Formula
 
+If 
+
+$$
+dx = a(x,t)dt + b(x,t) dWt 
+$$
+
+Then
+
+$$
+df(x) = (f_t + af_x = \frac{1}{2} b^2 f{xx})dt + bf_xdW_t
+$$
