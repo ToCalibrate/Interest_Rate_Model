@@ -71,4 +71,6 @@ class ShortRate():
         return rate_paths
 ```
 
-## Coming up......... Swaption Calibration
+## Coming up......... 
+
+### Swaption Analytical Formula Implementation using Hull White
