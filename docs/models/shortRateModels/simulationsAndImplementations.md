@@ -20,80 +20,35 @@ permalink: docs/models/shortRateModels/simulationsAndImplementations
 
 ## Simulate for Short Rate Paths
 ```python
+import numpy as np 
+import pandas as pd 
+
 class ShortRate(): 
     # Generate Short Rates using Monte Carlo Simulation 
 
-    def __init__(self, rt, t, T, dt, theta, kappa, sigma): 
+    def __init__(self, r0, theta, kappa, sigma): 
 
         # Read in time length you want to predict 
-        self.rt = rt 
-        self.t = t
-        self.T = T 
-        self.dt = dt 
+        self.r0 = r0
         self.theta = theta 
         self.kappa = kappa 
         self.sigma = sigma 
     
-    def Vasicek(self): 
+    def Vasicek(self, n_simulation=100, tenor=10, dt=1): 
+        # Simulate short rate paths under Vasicek design 
 
-        # Simulate 1 path of short rate under Vasicek design 
-        path_length = int((self.T-self.t)/self.dt) 
-        Z = np.random.normal(0.0, 1.0, size=path_length) 
+        # Initiate rate paths table 
+        index = [i*dt for i in range(int(tenor/dt))]
+        columns = [i+1 for i in range(n_simulation)]
+        rate_paths = pd.DataFrame(index=index, columns=columns)
+        rate_paths.loc[0, :] = self.r0 
 
-        rate_path = np.zeros(path_length+1) 
-        rate_path[0] = self.rt 
+        # Simulate rate path for each time increment
+        for i in range(1, len(rate_paths)): 
+            dWt = np.random.normal(0, np.sqrt(dt), size=n_simulation) 
+            rate_paths.loc[i*dt, :] = rate_paths.loc[(i-1)*dt, :] + self.kappa*(self.theta-rate_paths.loc[(i-1)*dt, :])*dt + self.sigma * dWt
 
-        var = self.sigma**2/(2*self.kappa)*(1-np.exp(-2*self.kappa*self.dt)) 
-        rate_path[1:] = np.sqrt(var)*Z 
-
-        for i in range(1, len(rate_path)): 
-            rate_path[i] = rate_path[i-1]*np.exp (-self.kappa*self.dt)+self.theta*(1-np.exp(-self.kappa*self.dt))
-
-        return rate_path 
-
-    def HullWhite(self): 
-
-        # Simulate 1 path of short rate under Hull White 
-        path_length = int(self.T) 
-        Z = np.random.normal(0.0, 1.0, size=path_length) 
-
-        rate_path = np.zeros(path_length+1) 
-        
-    
-    def HoLee(self): 
-
-        # Simulate 1 path of short rate under Ho-Lee 
-        path_length = int(self.T) 
-        Z = np.random.normal(0.0, 1.0, size=path_length) 
-
-        rate_path = np.zeros(path_length+1) 
-
-    def CIR(self): 
-
-        # Simulate 1 path of short rate under CIR 
-        path_length = int(self.T) 
-        Z = np.random.normal(0.0, 1.0, size=path_length) 
-
-        rate_path = np.zeros(path_length+1) 
-
-    def mc_short_rate(self, n_trials=10000): 
-
-        # Monte Carlo Simulation for Short Rate 
-        simulation = pd.DataFrame() 
-
-        for _ in range(n_trials): 
-            simulation.loc[:, _] = self.Vasicek() 
-
-        for _ in range(n_trials): 
-            simulation.loc[:, _] = self.HullWhite() 
-        
-        for _ in range(n_trials): 
-            simulation.loc[:, _] = self.HoLee() 
-
-        for _ in range(n_trials): 
-            simulation.loc[:, _] = self.CIR() 
-
-        return 
+        return rate_paths
 ```
 
 ## Coming up......... Swaption Calibration
