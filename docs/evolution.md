@@ -40,7 +40,7 @@ This time $$r(t)$$ follows a non-central Chi-squared distribution and remains po
 Next, to further accomadate the lack of precise no-arbitrage condition for initial calibration, we redevelop time-homogeneous equillibrium model to time-homogeneous Markov model. This can also refer as the transition from endogenous to exogenous model on short rate since the drift and volatility terms are no longer constants but some deterministic functions. Calibrating to these functions will potentially close the arbitrage gap to achieve initial precise no-arbitrage. Anyways, the first ones propose this are Ho & Lee in 1986 based on binomial/trinomial tree models. This model can also be calibrated to Affine Term Structure Model, but it is lack of the mean-reverting dynamic and not continuous with the tree design. Another model that developed by Hull White in 1990 which is also an extension to the Vasicek model. 
 
 $$
-dr(t) = (\theta(t)-k(t)r(t))dt + \sigma(t)r(t) d\tilde{W}(t) \hspace{0.5cm} \text{(Hull-White 1990)}
+dr(t) = (\theta(t)-k(t)r(t))dt + \sigma(t) d\tilde{W}(t) \hspace{0.5cm} \text{(Hull-White 1990)}
 $$
 
 Hull White is able to generate an analytical solution for caplet, floorlet and swaption which is a big step in real world calibtraion. It is worth noting that Hull White model is capable of transition from short rate modeling to forward rate modeling with its Markov property and flexibility in parameter tuning. 
