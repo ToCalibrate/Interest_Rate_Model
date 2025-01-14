@@ -46,9 +46,27 @@ class ShortRate():
         # Simulate rate path for each time increment
         for i in range(1, len(rate_paths)): 
             dWt = np.random.normal(0, np.sqrt(dt), size=n_simulation) 
-            rate_paths.loc[i*dt, :] = rate_paths.loc[(i-1)*dt, :] + self.kappa*(self.theta-rate_paths.loc[(i-1)*dt, :])*dt + self.sigma * dWt
+            rate_paths.loc[i*dt, :] = rate_paths.loc[(i-1)*dt, :] + self.kappa*(self.theta-rate_paths.loc[(i-1)*dt, :])*dt
+                                        + self.sigma * dWt
 
         return rate_paths
+
+    def CIR(self, n_simulation=100, tenor=10, dt=1): 
+        # Simulate short rate paths under CIR design 
+
+        # Initiate rate paths table 
+        index = [i*dt for i in range(int(tenor/dt))]
+        columns = [i+1 for i in range(n_simulation)]
+        rate_paths = pd.DataFrame(index=index, columns=columns)
+        rate_paths.loc[0, :] = self.r0 
+
+        # Simulate rate path for each time increment
+        for i in range(1, len(rate_paths)): 
+            dWt = np.random.normal(0, np.sqrt(dt), size=n_simulation) 
+            rate_paths.loc[i*dt, :] = rate_paths.loc[(i-1)*dt, :] + self.kappa*(self.theta-rate_paths.loc[(i-1)*dt, :])*dt
+                                        + self.sigma * np.sqrt(rate_paths.loc[(i-1)*dt, :]) * dWt
+
+            return rate_paths
 ```
 
 ## Coming up......... Swaption Calibration
