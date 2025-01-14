@@ -46,6 +46,6 @@ One-factor $$\to$$ Level, Two-factor $$\to$$ Level + Slope
 
 If you are really interest in this topic, please do your own research. Here is a great book you may reference to: 
 
-#### Interest Rate Models - Theory and Practice: With Smile, Inflation and Credit (by Damiano Brigo, Fabio Mercurio)
+$${Interest /Rate /Models - Theory and Practice: With Smile, Inflation and Credit (by Damiano Brigo, Fabio Mercurio)}$$
 
 This book should have detailed navigation, derivation and calibration for interest rate models except for code sharing 
