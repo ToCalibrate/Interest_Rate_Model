@@ -22,6 +22,8 @@ nav_enabled: true
 back_to_top: true
 back_to_top_text: "Back to top"
 
+footer_content: 'By Hengxu Zhu' 
+
 callouts:
   warning:
     title: Warning
