@@ -47,15 +47,15 @@ Hull White is able to generate an analytical solution for caplet, floorlet and s
 
 ### Instantaneous Forward Rate Models 
 
-Instantaneous forward rate models forward rate $$f(t, T)$$ instead of short rate $$r(t)$$. The essential difference of instantaneous forward rate modeling to short rate modeling is the bond valuation definition. 
+Instantaneous forward rate models model forward rate $$f(t, T)$$ instead of short rate $$r(t)$$. There are two essential differences between the two. One is the rate dependency, and the other one is the bond valuation definition. 
 
-For short rate modeling, we assume that the bond price under risk-neutral measure $$Q$$ is defined as 
+For short rate modeling, the rate is an instantly forward looking rate at time $$t$$ and therefore only depends on $$t$$. In addition, we assume that the bond price under risk-neutral measure $$Q$$ is defined as 
 
 $$
 E_{Q}\left(e^{-\int_{t}^{T} r(u)du} \right)
 $$
 
-While in instantaneous forward rate models, we assume the bond price no longer depends on a static short rate, but a dynamic forward rate that is evolving based on the tenor. 
+While in instantaneous forward rate models, the rate is an instantly forward looking rate after time interval $$(t, T)$$ and therefore depends on the tenor $$t$$ to $$T$$. In addition, we assume the bond price no longer depends on a static short rate, but a dynamic forward rate that is evolving based on the tenor. 
 
 $$
 e^{-\int_{t}^{T} f(t,u)du}
