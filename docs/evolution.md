@@ -52,7 +52,7 @@ Instantaneous forward rate models model forward rate $$f(t, T)$$ instead of shor
 For short rate modeling, the rate is an instantly forward looking rate at time $$t$$ and therefore only depends on $$t$$. In addition, we assume that the bond price under risk-neutral measure $$Q$$ is defined as 
 
 $$
-E_{Q}\left(e^{-\int_{t}^{T} r(u)du} \right)
+E_{Q}\left(e^{-\int_{t}^{T} r(u)du} \right|\mathcal{F})
 $$
 
 While in instantaneous forward rate models, the rate is an instantly forward looking rate after time interval $$(t, T)$$ and therefore depends on the tenor $$t$$ to $$T$$. In addition, we assume the bond price no longer depends on a static short rate, but a dynamic forward rate that is evolving based on the tenor. 
