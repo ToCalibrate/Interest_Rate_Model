@@ -50,7 +50,7 @@ E\left[\int_0^t r(s) \ ds\right] &= E\left[\int_0^t \left(r(0) e^{-\kappa s} + \
 &= \frac{\sigma^2}{2\kappa} t - \frac{\sigma^2}{4 \kappa^2} \left(1-e^{-2\kappa t}\right)\\
 &= \frac{\sigma^2}{2\kappa} t - \frac{\sigma^2}{4 \kappa^2} (1-e^{-\kappa t})^2 - \frac{\sigma^2}{4\kappa^2} 2e^{-\kappa t} (1-e^{-\kappa t}) \\
 &= -\frac{\sigma^2}{4\kappa^3} (1-e^{-\kappa t})^2 \\
-P(r, t, T) &= exp\left(-B(t, T) r(t) + A(t, T)\right)\\
+P(t, T) &= exp\left(-B(t, T) r(t) + A(t, T)\right)\\
 B(t, T) &= \frac{1 - e^{-\kappa (T-t)}}{\kappa}\\
 A(t, T) &= \theta (T-t) - \theta B(t, T) - \frac{\sigma^2}{4 \kappa^3} \left(1 - e^{-\kappa (T-t)}\right)^2
 \end{align}
